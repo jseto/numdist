@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+		"jsx": "react",
+    "jsxFactory": "h",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./out",
+		"resolveJsonModule": true,
+    "lib": [
+      "es2015", "dom"
+    ]
+  }
+}
