@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Travel wish list for travel bloggers allowing to set a trip plan",
   "scripts": {
+    "develop": "webpack-dev-server --open",
     "test": "jest",
     "debug": "node --inspect-brk node_modules/.bin/jest --runInBand --coverage false"
   },
@@ -26,7 +27,9 @@
   "devDependencies": {
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.4000",
-    "webpack": "^4.29.6"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "preact": "^8.4.2"

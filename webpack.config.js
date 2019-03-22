@@ -1,15 +1,15 @@
-const FileManagerPlugin = require('filemanager-webpack-plugin');
+// const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const _mode = 'development';
 const _output = 'dist'
 
 const externals = [
-	{
-		globalName: 'Preact',
-		nodeModule: 'preact',
-		productionFilePath: '/dist/preact.min.js',
-		developmentFilePath: '/dist/preact.js'
-	}
+	// {
+	// 	globalName: 'Preact',
+	// 	nodeModule: 'preact',
+	// 	productionFilePath: '/dist/preact.min.js',
+	// 	developmentFilePath: '/dist/preact.js'
+	// }
 ];
 
 function buildExternals(){
@@ -54,7 +54,7 @@ function buildCopyDependencies( mode ) {
 
 module.exports = {
 	mode: _mode,
-	entry: "./src/index.ts",
+	entry: "./src/index.tsx",
 	output: {
 		filename: '[name].wish-to-go.js',
 		path: __dirname + '/' + _output,
@@ -62,7 +62,9 @@ module.exports = {
 		library: 'Wish-To-Go',
 		umdNamedDefine: true
 	},
-
+  devServer: {
+    // contentBase: _output,
+  },
 	// Enable sourcemaps for debugging webpack's output.
 	devtool: "source-map",
 
