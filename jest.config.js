@@ -82,7 +82,12 @@ module.exports = {
   ],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+	// moduleNameMapper: {
+  //   "^react-dom/server$": "<rootDir>/node_modules/preact-render-to-string/dist/index.js",
+  //   "^react-addons-test-utils$": "<rootDir>/node_modules/preact-test-utils/lib/index.js",
+  //   "^react$": "<rootDir>/node_modules/preact-compat-enzyme/lib/index.js",
+  //   "^react-dom$": "<rootDir>/node_modules/preact-compat-enzyme/lib/index.js"
+  // },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
