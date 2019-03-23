@@ -1,6 +1,4 @@
 import { App } from '../src/app';
-import { h } from 'preact';
-import { mount } from 'enzyme';
 
 describe( 'App unit tests', ()=>{
 	it( 'should retrieve a string to write', ()=>{
