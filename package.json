@@ -2,11 +2,6 @@
   "name": "wish-to-go",
   "version": "0.1.0",
   "description": "Travel wish list for travel bloggers allowing to set a trip plan",
-  "scripts": {
-    "develop": "webpack-dev-server --open",
-    "test": "jest",
-    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand --coverage false"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jseto/wish-to-go.git"
@@ -24,7 +19,15 @@
     "url": "https://github.com/jseto/wish-to-go/issues"
   },
   "homepage": "https://github.com/jseto/wish-to-go#readme",
+  "scripts": {
+    "develop": "webpack-dev-server --open",
+    "test": "jest",
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand --coverage false"
+  },
   "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.4000",
     "webpack": "^4.29.6",

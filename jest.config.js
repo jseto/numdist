@@ -132,12 +132,14 @@ module.exports = {
   // setupFiles: [],
 
   // The path to a module that runs some code to configure or set up the testing framework before each test
-  // setupTestFrameworkScriptFile: null,
+  setupFilesAfterEnv: [
+		"<rootDir>/src/setupTests.ts"
+	],
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
 
-  // The test environment that will be used for testing
+	// The test environment that will be used for testing
   testEnvironment: "jsdom",
 
   // Options that will be passed to the testEnvironment
