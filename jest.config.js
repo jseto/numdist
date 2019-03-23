@@ -107,7 +107,7 @@ module.exports = {
   // Use this configuration option to add custom reporters to Jest
   reporters: [
 		"default",
-		"./jest-reporter.js"
+		"<rootDir>/jest-addons/jest-reporter.js"
 	],
 
   // Automatically reset mock state between every test
@@ -138,7 +138,7 @@ module.exports = {
 
   // The path to a module that runs some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: [
-		"<rootDir>/src/setupTests.ts"
+		"<rootDir>/jest-addons/setupTests.ts"
 	],
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
