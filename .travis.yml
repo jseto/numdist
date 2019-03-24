@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8.12.0"
+  - "10.15.3"
 env:
   - CODECLIMATE_API_HOST=https://codebeat.co/webhooks/code_coverage CODECLIMATE_REPO_TOKEN=8d092158-c69f-4613-a154-dbb5611f9a04
 after_script:
