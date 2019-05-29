@@ -4,7 +4,7 @@
 function pathsToIgnore( extraPaths=[] ) {
 	var paths = [
 		"/node_modules/",
-		"/dest/",
+		"/dist/",
 		"/out/",
 		"/coverage/"
 	];
@@ -85,12 +85,10 @@ module.exports = {
   ],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
-	// moduleNameMapper: {
-  //   "^react-dom/server$": "<rootDir>/node_modules/preact-render-to-string/dist/index.js",
-  //   "^react-addons-test-utils$": "<rootDir>/node_modules/preact-test-utils/lib/index.js",
-  //   "^react$": "<rootDir>/node_modules/preact-compat-enzyme/lib/index.js",
-  //   "^react-dom$": "<rootDir>/node_modules/preact-compat-enzyme/lib/index.js"
-  // },
+	moduleNameMapper: {
+		".+\\.(scss|css)$": "<rootDir>/jest-addons/__mocks__/file-mock.js",
+		"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jest-addons/__mocks__/file-mock.js",
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

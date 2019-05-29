@@ -11,6 +11,7 @@
 		"resolveJsonModule": true,
     "lib": [
       "es2015", "dom"
-    ]
+    ],
+		"experimentalDecorators": true
   }
 }
