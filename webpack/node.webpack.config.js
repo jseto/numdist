@@ -9,7 +9,7 @@ module.exports = {
 		server: './backend/server.ts'
 	},
 	output: {
-		filename: '[name].numbers-collector.js',
+		filename: '[name].numdist.js',
 		path: __dirname + '/../' + _output + '/backend',
 	},
 	// devtool: "source-map",

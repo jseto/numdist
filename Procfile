@@ -1,1 +1,1 @@
-web: node ./dist/backend/server.number-collector.js
+web: node ./dist/backend/server.numdist.js

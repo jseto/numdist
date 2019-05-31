@@ -9,7 +9,7 @@ module.exports = {
 	mode: 'development',
 	entry: "./src/index.tsx",
 	output: {
-		filename: '[name].number-collector.js',
+		filename: '[name].numdist.js',
 		path: __dirname + '/../' + _output + '/frontend',
 		libraryTarget: 'umd',
 		umdNamedDefine: true
@@ -108,7 +108,7 @@ module.exports = {
 	// externals: buildExternals(),
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: 'number-collector.css'
+			filename: 'numdist.css'
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
