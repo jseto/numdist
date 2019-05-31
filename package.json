@@ -1,28 +1,16 @@
 {
-  "name": "wish-to-go",
   "version": "0.1.0",
-  "description": "Travel wish list for travel bloggers allowing to set a trip plan",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jseto/wish-to-go.git"
-  },
-  "keywords": [
-    "travel",
-    "blogger",
-    "trip",
-    "plan",
-    "wishlist"
-  ],
   "author": "Josep Seto",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jseto/wish-to-go/issues"
-  },
-  "homepage": "https://github.com/jseto/wish-to-go#readme",
   "scripts": {
-    "develop": "webpack-dev-server --open",
+		"rest-server": "nodemon --watch 'backend/**/*.ts' --watch 'test/database/mock-data/*.*' --exec 'ts-node' backend/server.ts",
+    "webpack-server": "webpack-dev-server --config webpack/web.webpack.config.js --open",
+    "dev": "npm run rest-server & webpack-dev-server --config webpack/web.webpack.config.js & wait",
+    "dev-open": "npm run rest-server & npm run webpack-server & wait",
+    "build": "webpack --mode=production",
     "test": "jest",
-    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand --coverage false"
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand --coverage false",
+    "start": "node ./dist/backend/server.wish-to-go.js"
   },
   "devDependencies": {
     "@types/express": "^4.16.1",

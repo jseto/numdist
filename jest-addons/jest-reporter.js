@@ -25,7 +25,7 @@ class MyCustomReporter {
 			 output += fgGreen + results.numPassedTests + '/' + ( results.numTotalTests + results.numRuntimeErrorTestSuites ) + ' passed. ';
 		}
 		output += fgWhite + ( results.numTotalTests + results.numRuntimeErrorTestSuites ) + ' total';
-		console.log( output,	fgReset );
+		console.info( output,	fgReset );
   }
 }
 

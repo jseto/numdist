@@ -1,4 +1,4 @@
 import { h, render } from "preact";
-import { App } from "./app";
+import { NumberCollector } from "./number-collector";
 
-render(<App name="cool working" />, document.getElementById("app"));
+render(<NumberCollector />, document.getElementsByTagName( 'NumberCollector').item(0) );

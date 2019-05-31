@@ -9,7 +9,7 @@ module.exports = {
 	mode: 'development',
 	entry: "./src/index.tsx",
 	output: {
-		filename: '[name].wish-to-go.js',
+		filename: '[name].number-collector.js',
 		path: __dirname + '/../' + _output + '/frontend',
 		libraryTarget: 'umd',
 		umdNamedDefine: true
@@ -108,7 +108,7 @@ module.exports = {
 	// externals: buildExternals(),
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: 'wish-to-go.css'
+			filename: 'number-collector.css'
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
