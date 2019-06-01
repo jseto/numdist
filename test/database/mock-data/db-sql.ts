@@ -28,15 +28,14 @@ export class MockData {
 		});
 
 		if ( opts === undefined || opts.method === 'GET' ) {
-			return {
+			return [{
 				low: this.lowNumber,
 				high: this.highNumber
-			}
+			}]
 		}
 
 		if ( opts.method === 'POST' ) {
 			const obj = JSON.parse( opts.body );
-			console.log(obj)
 
 			let low: Pairs[] = obj.low;
 			let high: Pairs[] = obj.high;
@@ -48,7 +47,12 @@ export class MockData {
 		}
 
 		if ( opts.method === 'DELETE' ) {
-			// return this.mockDELETE( table, params );
+			for ( let i = 0; i < 100; i++) {
+				this.lowNumber[i]=0;
+				this.highNumber[i]=0;
+			}
+			this.writeData();
+			return [];
 		}
 	}
 
