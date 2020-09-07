@@ -89,9 +89,9 @@ export class NumberCollector extends Component<{}, NumberCollectorState> {
 				<p><strong>Total:</strong>{stats.lowTotal}</p>
 				<h1>Place</h1>
 				<h2>บน</h2>
-					{ stats.placeHigh.map( value => <p>{value.n} - {value.b} --- {this.round(value.b)}</p> ) }
+					{ stats.placeHigh.map( value => <p>{value.n} - {this.round(value.b)}</p> ) }
 				<h2>ลง</h2>
-					{ stats.placeLow.map( value => <p>{value.n} - {value.b}</p> ) }
+					{ stats.placeLow.map( value => <p>{value.n} - {this.round(value.b)}</p> ) }
 			</div>
 		);
 	}
@@ -114,7 +114,7 @@ export class NumberCollector extends Component<{}, NumberCollectorState> {
   }
 
 	round( x: number ) {
-		return Math.ceil(x/100)*100;
+		return Math.ceil(x/10)*10;
 	}
 
   command( e: KeyboardEvent ) {
