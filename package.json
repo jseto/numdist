@@ -27,7 +27,7 @@
     "jest-enzyme": "^7.1.2",
     "mini-css-extract-plugin": "^1.6.0",
     "node-fetch": "^2.6.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.7",
     "preact": "^10.5.13",
     "sass-loader": "^11.1.0",
